@@ -31,7 +31,7 @@ function kueri(options: Options): Options {
   return new Proxy(options, {
     get: (target, key: string) => {
       return target[key]
-        ? window.matchMedia(getMatcher(key, target[key])).matches
+        ? window.matchMedia(getMatcher(key, target[key]))
         : false;
     },
   });

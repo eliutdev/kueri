@@ -15,6 +15,8 @@ const options = {
 const k = kueri(options);
 
 // window.innerWidth = 703
-console.log(k.minWidth); // false
-console.log(k.maxWidth); // true
+console.log(k.minWidth.matches); // false
+console.log(k.maxWidth.matches); // true
+
+k.minWidth.onchange = (e) => console.log("wtf", e);
 ```
