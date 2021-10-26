@@ -1,0 +1,33 @@
+{
+  "name": "kueri",
+  "version": "0.0.1",
+  "description": "Media Queries with JavaScript made easy",
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsup src/index.ts --format esm --dts",
+    "prepublish": "npm run build",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "css",
+    "util",
+    "media-queries",
+    "media-query",
+    "media-queries-with-javascript"
+  ],
+  "author": "Eliut González (https://twitter.com/eliut505)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eliut505/kueri"
+  },
+  "devDependencies": {
+    "tsup": "^5.5.0",
+    "typescript": "^4.4.4"
+  }
+}
