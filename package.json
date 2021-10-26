@@ -1,6 +1,6 @@
 {
   "name": "kueri",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Media Queries with JavaScript made easy",
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
