@@ -2,7 +2,7 @@
 
 Media Queries with JavaScript made easy
 
-Determine if the document matches the media query string
+Determine if the document matches the media query options
 
 ```js
 import kueri from "kueri";
